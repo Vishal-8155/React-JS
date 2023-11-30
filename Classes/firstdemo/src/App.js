@@ -1,14 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./component/Header";
+import Navbar from "./component/Navbar";
+import MainContent from "./component/MainContent";
+import Footer from "./component/Footer";
+import './App.css'; 
 
 function App() {
-  let a, b;
-  a = 10;
-  b = 20;
   return (
-    <div className="App">
-      <h4>Addition is : {a + b}</h4>
-    </div>  
+    <div className="app-container">
+      <Header /> 
+      <Navbar />
+      <MainContent />
+      <Footer />
+    </div>
   );
 }
 
